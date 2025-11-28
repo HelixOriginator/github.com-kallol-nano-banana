@@ -1,0 +1,14 @@
+# robots.txt for Nano Banana – https://kallol.github.io/nano-banana
+# Created by Kallol Chakrabarti on 28 November 2025
+
+User-agent: *
+Allow: /
+
+# Allow all crawlers to access everything (we want maximum indexing)
+Disallow:
+
+# Sitemap location – helps Google & Bing find everything instantly
+Sitemap: https://kallol.github.io/nano-banana/sitemap.xml
+
+# Optional: Be nice to crawlers
+Crawl-delay: 10
