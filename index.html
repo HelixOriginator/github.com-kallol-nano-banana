@@ -3,30 +3,66 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
-    <!-- Google Site Verification – added as requested -->
     <meta name="google-site-verification" content="6qcwYwzA6RaAwLVA6G3HBTprB8Bdw4A16uZCF5e9Ar8" />
-
     <meta name="description" content="Nano Banana by Kallol Chakrabarti – 100% FREE defensive publication platform 2025. Protect your invention without patent. Stop companies & patent trolls from stealing poor inventors' ideas in India & worldwide.">
     <meta name="keywords" content="Nano Banana, Kallol Chakrabarti, free defensive publication 2025, protect idea without patent India, prior art free, stop patent trolling, poor inventor protection">
     <meta name="author" content="Kallol Chakrabarti – Author of 200+ original concepts">
     <meta name="robots" content="index, follow">
     <title>Nano Banana – Free Defensive Publication 2025 by Kallol Chakrabarti</title>
-
-    <!-- Open Graph (viral sharing) -->
     <meta property="og:title" content="Nano Banana – Free Way to Protect Your Invention (Kallol Chakrabarti)">
-    <meta property="og:description" content="Can’t afford patent? Publish here FREE → No one can ever patent your idea.">
+    <meta property="og:description" content="Can't afford patent? Publish here FREE → No one can ever patent your idea.">
     <meta property="og:image" content="https://helixoriginator.github.io/nano-banana/og-image.jpg">
     <meta property="og:url" content="https://helixoriginator.github.io/nano-banana">
     <meta property="og:type" content="website">
-
     <link rel="canonical" href="https://helixoriginator.github.io/nano-banana">
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body{font-family:'Inter',sans-serif;margin:0;padding:0;background:#0d1117;color:#c9d1d9;line-height:1.7;}
+
+        /* WORLD FIRST BANNER */
+        .world-first-banner {
+            background: linear-gradient(90deg, #7928ca, #ff0080, #7928ca);
+            background-size: 200% auto;
+            animation: shimmer 3s linear infinite;
+            color: #fff;
+            text-align: center;
+            padding: 14px 20px;
+            font-size: 1.05rem;
+            font-weight: 800;
+            letter-spacing: 0.05em;
+            text-transform: uppercase;
+        }
+        @keyframes shimmer { 0%{background-position:0% center} 100%{background-position:200% center} }
+        .world-first-banner span {
+            background: #fff;
+            color: #7928ca;
+            border-radius: 6px;
+            padding: 2px 10px;
+            margin-right: 10px;
+            font-size: 0.9rem;
+        }
+
         header{background:linear-gradient(135deg,#ffd60a,#ff9e00);color:#000;padding:120px 20px;text-align:center;}
         h1{font-size:4rem;margin:0;}
         .tagline{font-size:1.8rem;font-weight:800;margin:20px 0;}
+
+        /* WORLD FIRST BADGE inside header */
+        .world-first-badge {
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+            background: #000;
+            color: #fff;
+            border: 2px solid #fff;
+            border-radius: 50px;
+            padding: 8px 22px;
+            font-size: 1rem;
+            font-weight: 800;
+            margin: 10px 0 20px;
+            letter-spacing: 0.04em;
+        }
+        .world-first-badge .globe { font-size: 1.3rem; }
+
         .founder{font-size:1.5rem;background:#000;color:#ffd60a;padding:12px 35px;border-radius:50px;display:inline-block;margin:25px 0;}
         .container{max-width:1100px;margin:40px auto;padding:20px;}
         .card{background:#161b22;padding:40px;border-radius:15px;margin:30px 0;border:2px solid #30363d;}
@@ -34,10 +70,97 @@
         .btn:hover{background:#2ea043;transform:scale(1.05);transition:0.3s;}
         .highlight{color:#ffd60a;font-weight:900;}
         footer{text-align:center;padding:70px;background:#010409;}
+
+        /* CONCEPT LINK BUTTON */
+        .concept-btn-wrap {
+            margin: 35px 0 10px;
+            text-align: center;
+        }
+        .concept-btn {
+            display: inline-flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 6px;
+            text-decoration: none;
+            background: linear-gradient(135deg, #1a1a2e, #16213e);
+            border: 2px solid #ffd60a;
+            border-radius: 18px;
+            padding: 22px 40px;
+            max-width: 600px;
+            width: 90%;
+            transition: transform 0.25s, box-shadow 0.25s;
+            box-shadow: 0 0 20px rgba(255,214,10,0.15);
+            position: relative;
+            overflow: hidden;
+        }
+        .concept-btn::before {
+            content: '';
+            position: absolute;
+            top: -50%; left: -50%;
+            width: 200%; height: 200%;
+            background: radial-gradient(circle, rgba(255,214,10,0.07) 0%, transparent 60%);
+            animation: pulse-glow 3s ease-in-out infinite;
+        }
+        @keyframes pulse-glow { 0%,100%{opacity:0.4} 50%{opacity:1} }
+        .concept-btn:hover { transform: translateY(-4px) scale(1.02); box-shadow: 0 8px 35px rgba(255,214,10,0.35); }
+        .concept-btn .cb-label {
+            font-size: 0.8rem;
+            font-weight: 800;
+            letter-spacing: 0.12em;
+            text-transform: uppercase;
+            color: #ffd60a;
+            background: rgba(255,214,10,0.12);
+            border-radius: 50px;
+            padding: 3px 14px;
+        }
+        .concept-btn .cb-title {
+            font-size: 1.35rem;
+            font-weight: 800;
+            color: #fff;
+            text-align: center;
+        }
+        .concept-btn .cb-title .arrow { color: #ffd60a; }
+        .concept-btn .cb-summary {
+            font-size: 0.95rem;
+            color: #8b949e;
+            text-align: center;
+            line-height: 1.5;
+        }
+        .concept-btn .cb-summary strong { color: #c9d1d9; }
+
+        /* WORLD FIRST CARD HIGHLIGHT */
+        .world-first-card {
+            border: 2px solid #7928ca !important;
+            background: linear-gradient(135deg, #161b22, #1a0a2e) !important;
+            position: relative;
+            overflow: hidden;
+        }
+        .world-first-card::after {
+            content: '🌍 WORLD FIRST';
+            position: absolute;
+            top: 18px; right: -30px;
+            background: linear-gradient(90deg,#7928ca,#ff0080);
+            color: #fff;
+            font-size: 0.75rem;
+            font-weight: 800;
+            padding: 5px 40px;
+            transform: rotate(45deg);
+            letter-spacing: 0.08em;
+        }
     </style>
 </head>
 <body>
+
+    <!-- TOP BANNER -->
+    <div class="world-first-banner">
+        <span>🌍 WORLD FIRST</span>
+        The world's first 100% free community-powered defensive IP publication platform
+    </div>
+
     <header>
+        <div class="world-first-badge">
+            <span class="globe">🌐</span> World's First Free Defensive IP Publication Platform
+        </div>
         <h1>NANO BANANA</h1>
         <p class="tagline">Protect Your Invention <span class="highlight">100% FREE</span> – No Patent Needed</p>
         <div class="founder">Created & Founded by Kallol Chakrabarti</div>
@@ -49,9 +172,28 @@
     </header>
 
     <div class="container">
+
+        <!-- WORLD FIRST CONCEPT CARD -->
+        <div class="card world-first-card">
+            <h2>🌍 A World-First Concept in IP Protection</h2>
+            <p>Nano Banana is the <strong>world's first platform</strong> to combine community-driven defensive publication with zero cost and zero bureaucracy — making prior art creation accessible to <em>every inventor on the planet</em>, regardless of income or location. No lawyer. No fees. No waiting.</p>
+
+            <!-- THE NEW LINK BUTTON -->
+            <div class="concept-btn-wrap">
+                <a href="https://nano-banana-defense-ip-concept.netlify.app/" target="_blank" class="concept-btn">
+                    <span class="cb-label">🌍 World First · Explore the Full Concept</span>
+                    <span class="cb-title">Nano Banana Defense IP Concept <span class="arrow">↗</span></span>
+                    <span class="cb-summary">
+                        <strong>Turning public disclosure into your strongest shield.</strong><br>
+                        Discover how one free publication permanently blocks corporations & patent trolls from owning your idea — forever.
+                    </span>
+                </a>
+            </div>
+        </div>
+
         <div class="card">
             <h2>Message from Kallol Chakrabarti</h2>
-            <p>“I created Nano Banana in 2025 so no poor inventor ever loses their idea to rich corporations again. Publish here for free — your idea becomes unpatentable forever.”</p>
+            <p>"I created Nano Banana in 2025 so no poor inventor ever loses their idea to rich corporations again. Publish here for free — your idea becomes unpatentable forever."</p>
             <p style="text-align:right;color:#ffd60a;"><strong>– Kallol Chakrabarti</strong><br>Author of 200+ original concepts</p>
         </div>
 
@@ -68,6 +210,7 @@
 
     <footer>
         <p><strong>Nano Banana © 2025</strong> – Created by Kallol Chakrabarti • Made in India ❤️</p>
+        <p style="color:#444;font-size:0.9rem;margin-top:10px;">🌍 World's First Free Community-Powered Defensive IP Publication Platform</p>
     </footer>
 </body>
 </html>
